@@ -1,0 +1,19 @@
+{
+  "name": "intronodejs",
+  "version": "1.0.0",
+  "description": "Aprendiendo NodeJS, Express y Sequelize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kungfucoding23/IntroNodeJS.git"
+  },
+  "author": "Alejandro Santin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kungfucoding23/IntroNodeJS/issues"
+  },
+  "homepage": "https://github.com/Kungfucoding23/IntroNodeJS#readme"
+}
