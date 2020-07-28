@@ -1,3 +1,26 @@
 extends ../layout/index
 block contenido
-    h1 Nosotros
+    main.container.mt-5
+        .row
+            .col-md-5
+                img.img-fluid(src="img/nosotros.jpg", alt="Imagen de Nosotros")
+            .col-md-7
+                h1 #{pagina}
+                blockquote Morbi commodo nisi auctor, placerat dolor id, luctus ex. Duis augue tellus, ultricies eu urna non, ullamcorper laoreet enim. Nam euismod pharetra nunc, ac vulputate leo eleifend sed. Praesent sit amet massa neque. Maecenas imperdiet, urna at sagittis gravida, lectus nulla venenatis ante, eu tempus lorem nisl et eros
+                p Vivamus hendrerit sit amet lacus sit amet scelerisque. Proin in orci nulla. Aliquam sit amet enim quis tortor dapibus vestibulum at ut nisi.Maecenas tristique, mauris vitae luctus congue, erat dolor convallis libero, ac porta odio ante vel sem. Mauris nec cursus nibh, in pellentesque urna. Curabitur ornare nibh sit amet augue ullamcorper, id sodales ante vehicula. Maecenas hendrerit quam vitae ornare hendrerit. Donec auctor neque et congue tristique.
+                p Donec ut blandit lorem, at mollis nisi. Cras gravida facilisis aliquet. Sed neque ex, ultricies ut purus eget, varius pharetra justo.
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium laboriosam illum suscipit facilis voluptatem voluptate, error beatae ex dolor rerum explicabo quibusdam vitae itaque nihil, unde nam recusandae libero? Laborum!
+                .col-md-4
+                    img(src="img/icono_destinos.svg", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium laboriosam illum suscipit facilis voluptatem voluptate, error beatae ex dolor rerum explicabo quibusdam vitae itaque nihil, unde nam recusandae libero? Laborum!
+                .col-md-4
+                    img(src="img/icono_precios.svg", class="img-fluid mb-4")
+                    h2.mb-4 Mejor Precio
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium laboriosam illum suscipit facilis voluptatem voluptate, error beatae ex dolor rerum explicabo quibusdam vitae itaque nihil, unde nam recusandae libero? Laborum!
