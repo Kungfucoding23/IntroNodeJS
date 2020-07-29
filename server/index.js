@@ -3,6 +3,12 @@ const express = require('express');
 const path = require('path');
 const routes = require('./routes');
 const configs = require('./config');
+const db = require('./config/database');
+
+//Autenticar db
+db.authenticate()
+    .then(() => console.log('DB conectada!'))
+    .catch(error => console.log(error))
 
 
 
