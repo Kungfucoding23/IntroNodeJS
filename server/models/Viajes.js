@@ -23,5 +23,5 @@ const Viaje = db.define('viaje', {
         type: Sequelize.STRING
     }
 });
-
+//En la nueva sintaxis de javaScript esto se conoce como export default
 module.exports = Viaje;
