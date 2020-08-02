@@ -1,3 +1,10 @@
+/* 
+    Este archivo cuenta con toda la parte de configuración
+    en el decimos que vamos a utilizar express, que carpetas 
+    van a contener las vistas, que carpetas el public
+    crear algunas variables locales que podemos pasar a algunos
+    archivos y templates
+*/
 // Importar express
 const express = require('express');
 const path = require('path');
@@ -37,6 +44,7 @@ app.use((req, res, next) => {
     const fecha = new Date();
     res.locals.fechaActual = fecha.getFullYear();
     res.locals.ruta = req.path;
+    // Midle wear
     return next();
 });
 
