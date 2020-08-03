@@ -60,7 +60,7 @@ app.use('/', routes());
 // no es una direccion valida pero Heroku la va a detectar y le va a asignar una
 const host = process.env.HOST || '0.0.0.0';
 // esta variable de entorno la va a generar e inyectar automaticamente Heroku
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3306;
 
 app.listen(port, host, () => {
     console.log('El servidor está funcionando!');
