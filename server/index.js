@@ -12,6 +12,7 @@ const bodyParser = require('body-parser')
 const routes = require('./routes');
 const configs = require('./config');
 const db = require('./config/database');
+require('dotenv').config({ path: 'variables.env' });
 
 //Autenticar db
 db.authenticate()
@@ -54,4 +55,13 @@ app.use(bodyParser.urlencoded({ extend: true }));
 // Cargar las rutas
 app.use('/', routes());
 
-app.listen(3000);
+/* Puerto y Host para la app */
+// Lee el HOST y en caso de que no exista el asignamos la direccion 0.0.0.0 que
+// no es una direccion valida pero Heroku la va a detectar y le va a asignar una
+const host = process.env.HOST || '0.0.0.0';
+// esta variable de entorno la va a generar e inyectar automaticamente Heroku
+const port = process.env.PORT || 3000;
+
+app.listen(port, host, () => {
+    console.log('El servidor está funcionando!');
+});
