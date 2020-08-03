@@ -56,7 +56,7 @@ app.use(bodyParser.urlencoded({ extend: true }));
 app.use('/', routes());
 
 /* Puerto y Host para la app */
-// Lee el HOST y en caso de que no exista el asignamos la direccion 0.0.0.0 que
+// Lee el HOST y en caso de que no exista le asignamos la direccion 0.0.0.0 que
 // no es una direccion valida pero Heroku la va a detectar y le va a asignar una
 const host = process.env.HOST || '0.0.0.0';
 // esta variable de entorno la va a generar e inyectar automaticamente Heroku
