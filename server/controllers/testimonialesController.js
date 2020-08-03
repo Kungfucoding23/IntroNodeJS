@@ -35,11 +35,12 @@ exports.mostrarTestimonial = async(req, res) => {
 
     } else {
         // almacenarlo en la base de datos
-        const testimonial = await Testimonial.create({
-            nombre,
-            correo,
-            mensaje
-        })
-        res.redirect('/testimoniales')
+        Testimonial.create({
+                nombre,
+                correo,
+                mensaje
+            })
+            .then(testimonial => res.redirect('/testimoniales'))
+            .catch(error => console.log(error));
     }
 }
